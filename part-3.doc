@@ -1,0 +1,117 @@
+Q35. Explain how a queue can be implemented using two stacks.
+
+Exam: GATE CSE 2014 (Concept-Based)
+
+Answer:
+A queue can be implemented using two stacks. One stack is used for insertion (Enqueue) and the other for deletion (Dequeue). When the deletion stack is empty, all elements from the insertion stack are transferred to it, thereby maintaining the FIFO order.
+
+Q36. What are the applications of queues in operating systems?
+
+Exam: GATE CSE (Operating Systems Concept)
+
+Answer:
+Queues are used in operating systems for CPU scheduling, printer spooling, disk scheduling, process synchronization, interrupt handling, and managing waiting processes.
+
+Q37. Differentiate between a Queue and a Priority Queue.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A normal queue follows the FIFO (First In, First Out) principle, whereas a priority queue removes elements based on their priority. In a priority queue, higher-priority elements are processed before lower-priority ones.
+
+Q38. What is the worst-case time complexity of searching an element in a queue?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+The worst-case time complexity is O(n) because every element may need to be examined before finding the desired element.
+
+Q39. Explain the advantages of a Circular Queue over a Linear Queue.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+A circular queue efficiently utilizes memory by reusing vacant spaces created after deletions. It avoids the false overflow problem that occurs in linear queues.
+
+Q40. Compare Stack and Queue.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+
+Stack	Queue
+Follows LIFO	Follows FIFO
+Insertion and deletion at the same end	Insertion at rear, deletion at front
+Uses PUSH and POP operations	Uses ENQUEUE and DEQUEUE operations
+Used in recursion and expression evaluation	Used in scheduling and buffering
+Q41. What is Dynamic Memory Allocation?
+
+Exam: GATE CSE (Programming Concept)
+
+Answer:
+Dynamic memory allocation is the process of allocating memory during program execution (runtime). In C++, memory is allocated using the new operator and deallocated using the delete operator.
+
+Q42. What is a Memory Leak?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A memory leak occurs when dynamically allocated memory is not released after use. Over time, memory leaks reduce the available memory and may degrade system performance.
+
+Q43. What is a Dangling Pointer?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A dangling pointer is a pointer that refers to a memory location that has already been deallocated. Accessing such a pointer results in undefined behavior.
+
+Q44. What is a Wild Pointer?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A wild pointer is an uninitialized pointer that contains an undefined memory address. Using a wild pointer may cause unpredictable program behavior.
+
+Q45. What is the difference between malloc() and new?
+
+Exam: GATE CSE (Programming Concept)
+
+Answer:
+malloc() is a C library function that allocates raw memory and returns a void* pointer without calling constructors. The new operator in C++ allocates memory and automatically invokes the constructor of an object.
+
+Q46. What is the purpose of the delete operator in C++?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+The delete operator releases dynamically allocated memory created using the new operator. It also invokes the destructor of the object before freeing the memory.
+
+Q47. What are Smart Pointers in C++?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Smart pointers are C++ objects that automatically manage dynamically allocated memory. They help prevent memory leaks by releasing memory when it is no longer required.
+
+Q48. Explain unique_ptr, shared_ptr, and weak_ptr.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+
+unique_ptr has exclusive ownership of an object and cannot be copied.
+shared_ptr allows multiple pointers to share ownership of the same object.
+weak_ptr observes an object managed by a shared_ptr without owning it.
+Q49. Which memory region is generally faster: Stack or Heap? Explain.
+
+Exam: GATE CSE (Memory Management Concept)
+
+Answer:
+Stack memory is generally faster because memory allocation and deallocation are handled automatically using the LIFO principle. Heap memory is comparatively slower as it requires dynamic memory management by the runtime system.
+
+Q50. Why is Dynamic Memory Allocation important? Mention its advantages.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Dynamic memory allocation allows programs to allocate memory according to runtime requirements. Its advantages include efficient memory utilization, flexibility in handling variable-sized data, and support for dynamic data structures such as linked lists, stacks, queues, trees, and graphs.
