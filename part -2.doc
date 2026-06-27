@@ -1,0 +1,148 @@
+Q18. Evaluate the postfix expression 23*54*+9-.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Postfix evaluation is performed using a stack.
+
+2 × 3 = 6
+5 × 4 = 20
+6 + 20 = 26
+26 − 9 = 17
+
+Final Answer: 17
+
+Q19. Convert the infix expression (A+B)*(C-D) into postfix notation.
+
+Exam: GATE CSE (Expression Conversion Concept)
+
+Answer:
+Using a stack for operator precedence:
+
+(A+B) → AB+
+(C-D) → CD-
+Multiply both results.
+
+Postfix Expression: AB+CD-*
+
+Q20. Convert the infix expression A+B*C into prefix notation.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Multiplication has higher precedence than addition.
+
+A + (B × C)
+
+Prefix Expression: +A*BC
+
+Q21. Why is a stack used for function calls in C/C++?
+
+Exam: GATE CSE (Concept-Based)
+
+Answer:
+Each function call creates an activation record containing local variables, parameters, and return address. These records are stored in a stack and removed automatically when the function returns.
+
+Q22. Explain the difference between stack implementation using arrays and linked lists.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+An array-based stack has a fixed size and may suffer from overflow if the array becomes full. A linked-list-based stack grows dynamically and uses memory more efficiently but requires extra memory for pointers.
+
+Q23. State two real-life applications of a stack.
+
+Exam: ISRO Scientist/Engineer (Concept-Based)
+
+Answer:
+Common applications include:
+
+Undo/Redo operations in text editors.
+Browser back and forward navigation.
+
+Stacks are also used for recursion, expression evaluation, and syntax parsing.
+
+Q24. What is a queue? Explain its working principle.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A queue is a linear data structure that follows the FIFO (First In, First Out) principle. The first element inserted is the first one removed. Elements are inserted at the rear and removed from the front.
+
+Q25. Explain the ENQUEUE operation.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+ENQUEUE inserts a new element at the rear end of the queue. If the queue is full, a queue overflow condition occurs.
+
+Q26. Explain the DEQUEUE operation.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+DEQUEUE removes the front element from the queue. If the queue is empty, a queue underflow condition occurs.
+
+Q27. Why is a circular queue preferred over a linear queue?
+
+Exam: GATE CSE (Concept-Based)
+
+Answer:
+A circular queue reuses the empty spaces created after deletion by wrapping the rear pointer to the beginning of the array. This prevents memory wastage and improves efficiency.
+
+Q28. Differentiate between a linear queue and a circular queue.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+In a linear queue, the rear pointer moves only forward, causing unused spaces after deletions. In a circular queue, the rear pointer wraps around to the beginning, allowing efficient utilization of memory.
+
+Q29. What is queue overflow?
+
+Exam: PSU-Level Practice Question
+
+Answer:
+Queue overflow occurs when an insertion is attempted into a full queue and no additional space is available.
+
+Q30. What is queue underflow?
+
+Exam: PSU-Level Practice Question
+
+Answer:
+Queue underflow occurs when a deletion is attempted from an empty queue.
+
+Q31. What is the time complexity of ENQUEUE and DEQUEUE operations?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Both ENQUEUE and DEQUEUE operations have a time complexity of O(1) because they involve updating only the front or rear pointer.
+
+Q32. What is a deque? Explain its types.
+
+Exam: GATE CSE (Deque Concept)
+
+Answer:
+A Deque (Double-Ended Queue) is a queue in which insertion and deletion can occur at both ends.
+
+Types:
+
+Input-Restricted Deque – Insertion is allowed only at one end, while deletion is allowed at both ends.
+Output-Restricted Deque – Deletion is allowed only at one end, while insertion is allowed at both ends.
+Q33. What is a priority queue? Mention two applications.
+
+Exam: GATE CSE (Priority Queue Concept)
+
+Answer:
+A priority queue is a special type of queue in which elements are served according to their priority instead of their arrival order.
+
+Applications:
+
+CPU Scheduling
+Dijkstra's Shortest Path Algorithm
+Q34. Explain how a queue can be implemented using a linked list.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A queue can be implemented using a linked list by maintaining two pointers: Front and Rear. New nodes are inserted at the rear, and deletion is performed from the front. Both operations take O(1) time.
