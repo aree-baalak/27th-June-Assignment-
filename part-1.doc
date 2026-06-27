@@ -1,0 +1,118 @@
+Q1. A circularly linked list is used to represent a queue. A single pointer p is used to access the queue. To which node should p point so that both Enqueue and Dequeue operations can be performed in O(1) time?
+
+Exam: GATE CSE 2004 (Actual PYQ)
+
+Answer:
+The pointer p should point to the rear (last) node of the circular linked list. Since the front node is always p->next, insertion can be done after the rear node and deletion from the front node in constant time.
+
+**Q2. Linked lists are not suitable for which type of operation?
+
+Exam: GATE CSE 2003 (Actual PYQ)
+
+Answer:
+Linked lists are not suitable for random access because elements are stored in non-contiguous memory locations. Accessing any element requires sequential traversal from the head node.
+
+**Q3. Explain why binary search cannot be efficiently performed on a linked list.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Binary search requires direct access to the middle element. Since linked lists allow only sequential access, finding the middle element takes O(n) time, making binary search inefficient.
+
+**Q4. What is the worst-case time complexity of searching an element in a singly linked list?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+The worst-case time complexity is O(n) because every node may have to be visited before the required element is found or the list ends.
+
+**Q5. Why is a linked list preferred over an array when frequent insertions and deletions are required?
+
+Exam: ISRO Scientist/Engineer (Concept-Based)
+
+Answer:
+A linked list allows insertion and deletion without shifting elements. It also supports dynamic memory allocation, making it more suitable than arrays for frequently changing data.
+
+**Q6. What is the time complexity of inserting a node at the beginning of a singly linked list?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+The time complexity is O(1) because only the head pointer needs to be updated.
+
+**Q7. Differentiate between a singly linked list and a doubly linked list.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+A singly linked list contains one pointer (next), while a doubly linked list contains two pointers (previous and next). A doubly linked list supports traversal in both directions but requires extra memory.
+
+**Q8. Why is a circular linked list preferred in Round Robin Scheduling?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+A circular linked list allows continuous traversal from the last node back to the first node without restarting, making it suitable for cyclic scheduling algorithms like Round Robin.
+
+**Q9. Explain Floyd's Cycle Detection Algorithm.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+The algorithm uses two pointers—a slow pointer moving one step at a time and a fast pointer moving two steps at a time. If they meet, the linked list contains a loop; otherwise, it does not.
+
+**Q10. What is a header linked list?
+
+Exam: PSU-Level Practice Question
+
+Answer:
+A header linked list contains an additional header node before the first data node. The header node may store metadata such as the size of the list and simplifies insertion and deletion operations.
+
+**Q11. What are the advantages of a doubly linked list?
+
+Exam: ISRO Scientist/Engineer (Concept-Based)
+
+Answer:
+A doubly linked list supports forward and backward traversal, simplifies deletion when a node pointer is available, and is useful in browser history and navigation systems.
+
+**Q12. Compare arrays and linked lists.
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Arrays store elements in contiguous memory and provide O(1) random access, whereas linked lists store nodes dynamically and offer efficient insertion and deletion but sequential access.
+
+**Q13. Which data structure is best suited for checking balanced parentheses?
+
+Exam: GATE CSE 2004 (Actual PYQ)
+
+Answer:
+A stack is the most suitable data structure. Opening brackets are pushed onto the stack, and matching closing brackets pop them off. If the stack becomes empty at the end, the expression is balanced.
+
+**Q14. Why is a stack called a LIFO data structure?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+LIFO stands for Last In, First Out, meaning the most recently inserted element is removed first.
+
+**Q15. Explain Stack Overflow and Stack Underflow.
+
+Exam: PSU-Level Practice Question
+
+Answer:
+Stack Overflow occurs when an element is pushed onto a full stack. Stack Underflow occurs when an attempt is made to pop an element from an empty stack.
+
+**Q16. What is the time complexity of PUSH and POP operations in a stack?
+
+Exam: GATE-Level Practice Question
+
+Answer:
+Both PUSH and POP operations have a time complexity of O(1) because they involve only updating the top pointer.
+
+**Q17. Why is recursion implemented using a stack?
+
+Exam: GATE CSE (Concept-Based)
+
+Answer:
+Each recursive function call creates an activation record containing local variables, return address, and parameters. These records are stored in the call stack and removed automatically when the function returns.
